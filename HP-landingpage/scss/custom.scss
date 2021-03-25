@@ -1,0 +1,823 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+$body-color: #2c3039;
+$font-family-base: hp_simplifiedregular;
+$primary: #01b3e3;
+$fontLight: "hp_simplified_lightregular";
+
+@font-face {
+  font-family: "hp_simplifiedbold";
+  src: url("../fonts/hp_simplified_bold-webfont.woff2") format("woff2"),
+    url("../fonts/hp_simplified_bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "hp_simplifieditalic";
+  src: url("../fonts/hp_simplified_italic-webfont.woff2") format("woff2"),
+    url("../fonts/hp_simplified_italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "hp_simplified_lightregular";
+  src: url("../fonts/hp_simplified_light-webfont.woff2") format("woff2"),
+    url("../fonts/hp_simplified_light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "hp_simplifiedregular";
+  src: url("../fonts/hp_simplified_regular-webfont.woff2") format("woff2"),
+    url("../fonts/hp_simplified_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none;
+  box-shadow: none;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "mixins";
+
+/******************************CUSTOM CSS*****************************************/
+
+.homeHeader {
+  .navbar {
+    border-bottom: 1px solid #e8e8e8;
+    height: 61px;
+
+    a.navbar-brand {
+      width: 18%;
+    }
+
+    a {
+      color: #000;
+    }
+
+    .navbar-custom {
+      .navbar-toggler {
+        color: rgba(0, 0, 0, 0.5);
+        border-color: rgba(0, 0, 0, 0.1);
+
+        .navbar-toggler-icon {
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+      }
+
+      .right-menu {
+        .nav-link {
+          padding: 0 0.4rem 0;
+
+          i {
+            background: #f8fcff;
+            width: 32px;
+            display: inline-block;
+            text-align: center;
+            padding: 5px 0;
+            margin-top: 0.4rem;
+          }
+        }
+      }
+    }
+
+    .navbar-nav {
+      .nav-link {
+        padding: 0rem 0.6rem 0;
+        font-size: 0.85rem;
+      }
+    }
+  }
+}
+
+/****************** Sidebar CSS ******************/
+#wrapper {
+  overflow-x: hidden;
+
+  &.toggled {
+    #sidebar-wrapper {
+      margin-left: 0;
+      @media (min-width: 768px) {
+        margin-left: -24rem;
+      }
+    }
+  }
+
+  #sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -24rem;
+    width: 24rem;
+    background-color: #f7fcff;
+    -webkit-transition: margin 0.25s ease-out;
+    -moz-transition: margin 0.25s ease-out;
+    -o-transition: margin 0.25s ease-out;
+    transition: margin 0.25s ease-out;
+
+    .sidebar-Heading {
+      width: 85%;
+      margin: 40px auto 0;
+
+      .btn {
+        background: #fff;
+        font-weight: 700;
+        font-family: "hp_simplifiedbold";
+        font-size: 16px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #999;
+        font-size: 22px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      margin-left: 0;
+    }
+  }
+
+  /***************Sidebar Accordion customize********************/
+
+  div#accordionSidebar {
+    width: 85%;
+    margin: 10px auto 0;
+
+    .accordion-item {
+      background-color: #fff;
+      margin-bottom: 5px;
+      box-shadow: 2px 2px 10px #ebeff1;
+
+      .accordion-header {
+        .accordion-button {
+          &:not(.collapsed) {
+            background-color: #fff;
+            color: #000;
+
+            &:after {
+              color: #0096d5;
+            }
+          }
+        }
+      }
+
+      .innerNav {
+        &.longtxt {
+          span {
+            color: #999;
+            font-size: 1rem;
+            display: block;
+            font-family: "hp_simplified_lightregular";
+          }
+          a.nav-link {
+            font-size: 0.8rem;
+          }
+        }
+
+        hr {
+          opacity: 0.1;
+        }
+
+        a.nav-link {
+          display: block;
+          font-size: 0.95rem;
+          color: #5a5a5a;
+          padding-left: 0;
+          line-height: normal;
+          position: relative;
+
+          span {
+            color: #999;
+            font-size: 0.75rem;
+            display: block;
+            font-family: "hp_simplified_lightregular";
+          }
+
+          samp {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            padding: 6px 0;
+            border-radius: 50%;
+            background-color: #f7f7f7;
+            color: #d0cccc;
+            right: 0px;
+            text-align: center;
+            top: 12px;
+            font-weight: bold;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  #page-content-wrapper {
+    width: 100%;
+    @media (min-width: 768px) {
+      min-width: 0;
+    }
+  }
+}
+
+/*********** Sidebar CSS Ends *************/
+
+.footerHome {
+  background-color: #263145;
+  min-height: 200px;
+  color: #fff;
+  font-family: "hp_simplified_lightregular";
+  font-size: 0.8rem;
+
+  .footerBlock1 {
+    @include footerPadding(padding, 1.5%, 0, 1.5%, 5.2%);
+  }
+
+  .footerBlock2 {
+    @include footerPadding(padding, 1.9%, 0, 2%, 4.3%);
+
+    .nav-link {
+      color: #d8d6d6;
+    }
+  }
+
+  .footerBlock3 {
+    @include footerPadding(padding, 1.5%, 0, 2%, 5.2%);
+    color: #ccc;
+  }
+
+  hr {
+    margin: 0 0 1rem;
+    width: 98%;
+    margin: 0 auto;
+  }
+}
+
+.caro-1 {
+  &.owl-carousel {
+    .owl-nav {
+      &.disabled {
+        justify-content: flex-end;
+        display: flex;
+
+        .owl-prev,
+        .owl-next {
+          background-color: #f4f4f4;
+          border-radius: 0;
+          width: 40px;
+
+          &:hover {
+            background-color: #e8e8e8;
+          }
+        }
+      }
+    }
+    .owl-dots {
+      &.disabled {
+        justify-content: flex-start;
+        display: flex;
+        margin-top: 0;
+        bottom: 8px;
+        position: absolute;
+
+        .active {
+          span {
+            width: 40px;
+            border-radius: 5px;
+            height: 5px;
+            background-color: #2c3039;
+          }
+        }
+
+        span {
+          width: 5px;
+          height: 5px;
+          margin: 5px;
+        }
+      }
+    }
+
+    .owl-nav {
+      justify-content: flex-end;
+      display: flex;
+    }
+  }
+}
+
+/*********** Whats New CSS **************/
+.whatsNew {
+  p {
+    margin: 20px 0 11px;
+
+    a {
+      color: #01b2e4;
+      font-size: 0.8rem;
+      margin-left: 10px;
+    }
+  }
+
+  .card {
+    background-image: linear-gradient(#efefef, #fcfcfc);
+    border: none;
+    border-radius: 5px;
+
+    .imgBlk {
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      margin-top: auto;
+    }
+
+    .txtBlk {
+      // height: 200px;
+      text-align: center;
+      color: #000;
+
+      h5 {
+        padding: 24px 0 18px;
+
+        @media (max-width: 1366px) {
+          font-size: 0.9rem;
+          padding: 24px 0 10px;
+        }
+      }
+
+      p {
+        @media (max-width: 1366px) {
+          font-size: 0.8rem;
+          padding: 0 0 10px;
+        }
+      }
+    }
+
+    .card-title {
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    .card-text {
+      text-align: center;
+      font-family: $fontLight;
+      color: #999;
+      font-size: 0.9rem;
+      margin-bottom: 0.2rem;
+    }
+
+    a.whatsNew-rm {
+      text-transform: capitalize;
+      color: #1fbce5;
+      text-decoration: none;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+}
+
+/*********** Explore CSS **************/
+
+.explore {
+  &.carousel {
+    .carousel-inner {
+      padding: 0 0.5rem;
+      .col {
+        margin-bottom: 15px;
+        .card {
+          border: none;
+          box-shadow: 1px 0px 5px 2px #d0d0d0;
+
+          .innerCarousel {
+            .carousel-control-prev {
+              @include inner-carousel-prev-next(left, 10px, right, auto);
+            }
+
+            .carousel-control-next {
+              @include inner-carousel-prev-next(left, auto, right, 10px);
+            }
+          }
+
+          .card-body {
+            padding: 20px 25px;
+
+            @media (max-width: 1366px) {
+              padding: 10px;
+            }
+
+            .card-title {
+              font-size: 1.2rem;
+
+              @media (max-width: 1366px) {
+                font-size: 1rem;
+              }
+            }
+
+            p.color {
+              font-family: $fontLight;
+              font-size: 1.2rem;
+              padding: 0.5rem 0 0;
+              margin-bottom: 0;
+            }
+
+            .colordots {
+              padding: 0 0 0.5rem;
+
+              .lightgray {
+                color: #bbbbbb;
+                margin-right: 0.6rem;
+              }
+
+              .darkgray {
+                color: #627885;
+              }
+            }
+
+            .card-text {
+              font-size: 0.9rem;
+              padding: 1rem 2.6rem 1rem 0;
+              font-weight: 700;
+            }
+
+            ul {
+              font-family: $fontLight;
+              font-size: 0.95rem;
+              padding-left: 1rem;
+
+              li {
+                padding-bottom: 1rem;
+
+                @media (max-width: 1366px) {
+                  padding-bottom: 0.5rem;
+                }
+              }
+
+              @media (max-width: 1366px) {
+                font-size: 0.8rem;
+                padding-left: 11px;
+              }
+            }
+
+            .bottomBlk {
+              .skulist {
+                font-size: 0.7rem;
+                color: #0096d5;
+              }
+
+              .btn-primary {
+                color: $white;
+                font-family: "hp_simplified_lightregular";
+                letter-spacing: 0.2px;
+              }
+
+              .series {
+                text-decoration: none;
+                margin-left: 1.5rem;
+
+                @media (max-width: 1366px) {
+                  margin-left: 1rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .carousel-control-prev {
+      right: 70px;
+      left: auto;
+      display: flex;
+      width: 35px;
+      height: 25px;
+      background: #e8e8e8;
+      top: -15px;
+    }
+
+    .carousel-control-next {
+      right: 20px;
+      left: auto;
+      display: flex;
+      width: 35px;
+      height: 25px;
+      background: #e8e8e8;
+      top: -15px;
+    }
+  }
+}
+
+/*********** Most Used CSS **************/
+.mostUsed {
+  .heading {
+    position: relative;
+    top: 20px;
+  }
+
+  .pinIcon {
+    text-align: right;
+    display: block;
+    color: #2eaade;
+    position: absolute;
+    right: 20px;
+    width: 25px;
+    height: 25px;
+    background: #f7fbfe;
+    text-align: center;
+  }
+
+  .explore {
+    &.carousel {
+      .carousel-inner {
+        .col {
+          .card {
+            .card-body {
+              .card-title {
+                margin: 20px 0 30px;
+                font-size: 1.5rem;
+              }
+
+              .card-text {
+                font-family: "hp_simplified_lightregular";
+                font-weight: normal;
+                font-size: 1rem;
+                padding: 0;
+              }
+
+              .accessBtn {
+                color: #2c3039;
+                text-decoration: none;
+                font-size: 1rem;
+                vertical-align: middle;
+
+                span {
+                  background: #2c3039;
+                  border-radius: 50%;
+                  padding: 6px;
+                  margin-right: 8px;
+                  color: #fff;
+                  font-weight: 700;
+                  font-family: "bootstrap-icons";
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/******************** HP University ***********************/
+@at-root .hp-Univ {
+  .carousel-inner {
+    .card {
+      width: 94%;
+      border: none;
+      box-shadow: 2px 2px 13px 1px #e7e8e9;
+
+      .card-body {
+        &.outerBlk {
+          position: absolute;
+          background: #f5f5f5;
+          margin: 1rem 0 1rem 5.5rem;
+          border-radius: 10px 0 0 10px;
+          bottom: 11px;
+          right: -20px;
+          min-width: 80%;
+          min-height: 44%;
+          padding: 20px 33px;
+
+          @media (max-width: 1366px) {
+            margin: 1rem 0 1rem 1rem;
+            bottom: 0;
+            padding: 10px;
+            min-height: 50%;
+          }
+
+          .card-title {
+            font-size: 1.7rem;
+            margin: 0.5rem 0 1.5rem;
+
+            @media (max-width: 1366px) {
+              margin: 0 0 0.5rem;
+            }
+
+            span {
+              font-family: $fontLight;
+              display: block;
+            }
+          }
+
+          .card-text {
+            font-family: $fontLight;
+            font-size: 0.85rem;
+          }
+          .bottomBlk {
+            margin-bottom: 15px;
+
+            .accessBtn {
+              @include accessfont($fontLight, #01b3e3);
+
+              span {
+                @include read(#0096d5, #fff, 5px, 6px, 50%, 0.8rem);
+              }
+            }
+
+            .designTitle {
+              margin: 1.5rem 0;
+              font-size: 0.9rem;
+
+              @media (max-width: 1366px) {
+                margin: 0;
+              }
+            }
+          }
+
+          .expandBtn {
+            position: absolute;
+            bottom: 10px;
+            right: 15px;
+            font-size: 2rem;
+            color: #0197d6;
+          }
+        }
+
+        &.blankBlk {
+          padding: 2rem;
+
+          @media (max-width: 1366px) {
+            padding: 1rem;
+          }
+
+          .card-title {
+            @media (max-width: 1366px) {
+              font-size: 1.5rem;
+            }
+          }
+
+          .card-text {
+            font-family: $fontLight;
+            font-size: 1.2rem;
+            margin-top: 2rem;
+
+            @media (max-width: 1366px) {
+              font-size: 1rem;
+              margin-top: 0;
+            }
+          }
+
+          .accessBtn {
+            @include accessfont($font-family-base, #2c3039);
+            span {
+              @include read(#2c3039, #fff, 5px, 6px, 50%, 0.8rem);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .carousel-control-prev {
+    @include carousel-prev-next(70px);
+  }
+
+  .carousel-control-next {
+    @include carousel-prev-next(20px);
+  }
+}
+
+/*********************** Top Accessed Carousel ************************************/
+.topAccessed {
+  .carousel-inner {
+    .card {
+      width: 75%;
+      border: none;
+      box-shadow: 2px 2px 13px 1px #e7e8e9;
+
+      .card-body {
+        &.outerBlk {
+          position: absolute;
+          background: #f5f5f5;
+          margin: 1rem 0 1rem 5.5rem;
+          border-radius: 10px 0 0 10px;
+          bottom: 11px;
+          right: -20px;
+          min-width: 80%;
+          min-height: 44%;
+          padding: 20px 33px;
+
+          @media (max-width: 1366px) {
+            margin: 1rem 0 1rem 1rem;
+            bottom: 0;
+            padding: 10px;
+            min-height: 50%;
+          }
+
+          .card-title {
+            font-size: 1.7rem;
+            margin: 0.5rem 0 1.5rem;
+
+            @media (max-width: 1366px) {
+              margin: 0 0 0.5rem;
+            }
+
+            span {
+              font-family: $fontLight;
+              display: block;
+            }
+          }
+
+          .card-text {
+            font-family: $fontLight;
+            font-size: 0.85rem;
+          }
+          .bottomBlk {
+            margin-bottom: 15px;
+
+            .accessBtn {
+              @include accessfont($fontLight, #01b3e3);
+
+              span {
+                @include read(#0096d5, #fff, 5px, 6px, 50%, 0.8rem);
+              }
+            }
+
+            .designTitle {
+              margin: 1.5rem 0;
+              font-size: 0.9rem;
+
+              @media (max-width: 1366px) {
+                margin: 0;
+              }
+            }
+          }
+
+          .expandBtn {
+            position: absolute;
+            bottom: 10px;
+            right: 15px;
+            font-size: 2rem;
+            color: #0197d6;
+          }
+        }
+
+        &.blankBlk {
+          padding: 2rem;
+
+          .topaccssImg {
+            position: absolute;
+            height: 70%;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -100%;
+            border-radius: 10px;
+          }
+
+          @media (max-width: 1366px) {
+            padding: 1rem;
+          }
+
+          .card-title {
+            @media (max-width: 1366px) {
+              font-size: 1.5rem;
+            }
+          }
+
+          .card-text {
+            font-family: $fontLight;
+            font-size: 1rem;
+            margin-top: 2rem;
+
+            @media (max-width: 1366px) {
+              font-size: 1rem;
+              margin-top: 0;
+            }
+          }
+
+          .accessBtn {
+            @include accessfont($font-family-base, #2c3039);
+            span {
+              @include read(#2c3039, #fff, 5px, 6px, 50%, 0.8rem);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .carousel-control-prev {
+    @include carousel-prev-next(70px);
+  }
+
+  .carousel-control-next {
+    @include carousel-prev-next(20px);
+  }
+}

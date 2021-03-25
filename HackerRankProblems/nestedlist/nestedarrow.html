@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width,initial scale=1"> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <title>Active and Highlight</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/highlight.css">		
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>	
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+       
+
+        
+        
+        <ul class="accordion">
+          <li>
+            <a href="javascript:void(0);">List 1 Mumbai indians</a>
+            <span class="glyphicon glyphicon-chevron-down toggle dropdownIcon"></span>
+            <ul class="inner">
+              <li>Option 1</li>
+              <li>Option 2</li>
+              <li>Option 3</li>
+            </ul>
+          </li>
+          
+          <li>
+            <a class="toggle" href="javascript:void(0);">List 2 royal challengers bangalore</a>
+            <span class="glyphicon glyphicon-chevron-down toggle dropdownIcon"></span>
+          
+            <ul class="inner">
+              <li>Option 1</li>
+              <li>Option 2</li>
+              <li>Option 3</li>
+            </ul>
+          </li>          
+         
+          
+          <li>
+            <a class="toggle" href="javascript:void(0);">List 3 Delhi captails</a>
+            <span class="glyphicon glyphicon-chevron-down toggle dropdownIcon"></span>
+          
+            <ul class="inner">
+              <li>
+                <a href="#" class="toggle">Nested elements</a>
+                <span class="glyphicon glyphicon-chevron-down toggle dropdownIcon"></span>
+          
+                <ul class="inner">
+                  <li>
+                    <a href="#" class="toggle">Another nested element</a>
+                    <span class="glyphicon glyphicon-chevron-down toggle dropdownIcon"></span>
+          
+                    <div class="inner">
+                      <p>
+                        As long as the inner element has inner as one of its classes then it will be toggled.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus placerat fringilla. Duis a elit et dolor laoreet volutpat. Aliquam ultrices mauris id mattis imperdiet. Aenean cursus ultrices justo et varius. Suspendisse aliquam orci id dui dapibus
+                        blandit. In hac habitasse platea dictumst. Sed risus velit, pellentesque eu enim ac, ultricies pretium felis.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="inner">
+                  <li>
+                    <a href="#" class="toggle">Another nested element</a>
+                    <span class="glyphicon glyphicon-chevron-down toggle dropdownIcon"></span>
+          
+                    <div class="inner">
+                      <p>
+                        As long as the inner element has inner as one of its classes then it will be toggled.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus placerat fringilla. Duis a elit et dolor laoreet volutpat. Aliquam ultrices mauris id mattis imperdiet. Aenean cursus ultrices justo et varius. Suspendisse aliquam orci id dui dapibus
+                        blandit. In hac habitasse platea dictumst. Sed risus velit, pellentesque eu enim ac, ultricies pretium felis.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              
+              <li>Option 2</li>
+              
+              <li>Option 3</li>
+            </ul>
+          </li>
+        </ul>
+
+    <script>
+        $(document).ready(function(){
+            $('.toggle').click(function(e) {
+                var $this = $(this);
+                // if($this.hasClass('glyphicon-chevron-down')){
+                //         $this.removeClass('glyphicon-chevron-down');
+                //         $this.addClass('glyphicon-chevron-up');
+                //         }
+                // else{
+                //     $this.removeClass('glyphicon-chevron-up');
+				//     $this.addClass('glyphicon-chevron-down');
+                // }
+
+                    // console.log($this.next().children().find('.inner'));
+                    
+                   
+                if ($this.next().hasClass('show')) {
+                    //debugger;
+                    $this.next().removeClass('show');
+                    $this.removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+                    
+                    $this.next().find('li >span.glyphicon-chevron-up').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+                   
+                } else {
+                    $this.parent().parent().find('li .inner').removeClass('show');
+                    // $this.parent().siblings().find('span.glyphicon-chevron-up').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+                    $this.parent().parent().find('li span.glyphicon-chevron-up').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+                    $this.next().addClass('show');
+                    $this.removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+				   
+                }
+                
+
+
+            });
+        });
+       
+    </script>
+</body>
+</html>

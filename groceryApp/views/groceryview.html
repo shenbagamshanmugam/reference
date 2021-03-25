@@ -1,0 +1,10 @@
+<button type="button" class="btn btn-success pull-left" ng-click="itemToggle(item)">
+	<span class="glyphicon" ng-class="item.completed ? 'glyphicon-check' : 'glyphicon-unchecked'"></span>
+</button>
+<span ng-class="{strike:item.completed}" class="listItem">{{item.itemName | uppercase}}</span>
+	<button type="button" class="btn btn-sm btn-danger pull-right" ng-click="removeItem(item)">
+		<span class="glyphicon glyphicon-trash"></span>
+	</button>
+	<a href="#!/inputitem/edit/{{item.id}}" class="btn btn-sm btn-default pull-right">
+		<span class="glyphicon glyphicon-pencil"></span>
+	</a>

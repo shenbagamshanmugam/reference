@@ -1,0 +1,47 @@
+@mixin footerPadding($footerpaddingBlk, $P-top, $P-right, $P-bottom, $P-left) {
+  #{$footerpaddingBlk}: $P-top $P-right $P-bottom $P-left;
+  margin-bottom: 0;
+}
+
+@mixin accessfont($fontused, $fontcolor) {
+  text-decoration: none;
+  font-family: $fontused;
+  letter-spacing: 0.5px;
+  color: $fontcolor;
+}
+
+@mixin carousel-prev-next($right) {
+  right: $right;
+  left: auto;
+  display: flex;
+  width: 35px;
+  height: 25px;
+  background: #e8e8e8;
+  top: -15px;
+}
+
+@mixin inner-carousel-prev-next(
+  $innerleft,
+  $leftvalue,
+  $innerright,
+  $rightvalue
+) {
+  #{$innerleft}: $leftvalue;
+  #{$innerright}: $rightvalue;
+  top: 50%;
+  transform: translateY(-25%);
+  background: #7a7a7a;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  font-size: 0.5rem;
+  padding: 6px;
+}
+
+@mixin read($bgcolor, $fontcolor, $p-TopBtm, $p-LftRgt, $bdr-radius, $m-rgt) {
+  background-color: $bgcolor;
+  color: $fontcolor;
+  padding: $p-TopBtm $p-LftRgt;
+  border-radius: $bdr-radius;
+  margin-right: $m-rgt;
+}

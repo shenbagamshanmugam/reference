@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arrays = [100,70,30,30,30,20,5];
+        var uniquearray = [];
+        var score = [25,10,40,15,120]; 
+        // $.each(arrays,function(index,value){
+        //     if($.inArray(value,uniquearray)===-1){
+        //         uniquearray.push(value);
+               
+        //     }
+        // })
+
+        for(i=0;i<arrays.length;i++){
+            if(arrays[i]!=arrays[i+1]){
+                uniquearray.push(arrays[i]);                
+            }
+            
+        }
+
+        for(i=0;i<score.length;i++){
+            var arrvalue = score[i];            
+            uniquearray.push(score[i]);
+            var newarray= uniquearray.sort(function(a, b){return a - b});
+            var reversearray = newarray.reverse();           
+            
+             console.log((reversearray.indexOf(arrvalue))+1);   
+             reversearray.splice((reversearray.indexOf(arrvalue)),1);          
+        } 
+        
+        
+            
+         
+    </script>
+</body>
+</html>

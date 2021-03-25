@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Airline page Updated</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial scale=1">
+	<link rel="stylesheet" type="text/css" href="css/airlinepageupdated.css">
+	<link rel="stylesheet" type="text/css" href="css/laptopview.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar fixed-top navbar-light bg-faded navbar_style">
+		</nav>
+	</header>
+	<div class="container-fluid bookingPage">
+		<div class="row referenceNumberBlock">
+			<div class="col-md-3 col-sm-6 col-xs-12"><h5>JOC Ref No: <span class="input">JOCT17-02-00235</span></h5></div>
+			<div class="col-md-3 col-sm-6 col-xs-12"><h5>Bass Req Ref No: <span class="input">N/A</span></h5></div>
+			<div class="col-md-3 col-sm-6 col-xs-12"><h5>Vessel Name: <span class="input">N/A</span></h5></div>
+			<div class="col-md-3 col-sm-6 col-xs-12"><h5>Class: <span class="input">Economy</span></h5></div>			
+		</div>
+		<div class="row originBlock">
+		<div class="col-md-3 col-sm-6 col-xs-12 origin_destination">
+			<div class="col-md-6 col-sm-6 col-xs-3 originDestination">
+				<h5>Origin & Destination:</h5>
+			</div>
+			<div class="col-md-6 col-sm-5 col-xs-7 place">
+				
+				<span class="input col-md-12 col-sm-12 col-xs-12">BOM-SIN</span>
+				<span class="input col-md-12 col-sm-12 col-xs-12">BOM-SIN</span>
+				<span class="input col-md-12 col-sm-12 col-xs-12">BOM-SIN</span>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6  col-xs-12 origin_destination">
+			<div class="col-md-2 col-sm-1 col-xs-1 originDestination">
+				<h5>Date:</h5>
+			</div>
+			<div class="col-md-8 col-sm-5 col-xs-7 place">
+				<span class="input col-md-12 col-sm-12 col-xs-12">20-Jan-2018</span>
+				<span class="input col-md-12 col-sm-12 col-xs-12">20-Jan-2018</span>
+				<span class="input col-md-12 col-sm-12 col-xs-12">20-Jan-2018</span>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6 col-xs-12 currencyspan"><h5>Currency:  <span class="input">INR</span></h5></div>
+		<div class="col-md-3 col-sm-6 col-xs-12 journey"><h5>Journey Type: <span class="input">Multi City</span></h5></div>
+		</div>
+		<div class="originalBookingBlock">
+			<nav class="navbar fixed-top navbar-light bg-faded originalBookingNavbar">
+				<div class="col-md-1 col-sm-1 col-xs-1 radioIcon">												
+					<input class="radioBox" id="radioCheck" type="radio"/>
+					<label for="radioCheck" class="radioClicked"></label>							
+				</div>
+				<div class="col-md-9 col-sm-8 col-xs-6 bookingText">
+					<h5>Original Booking(14h 15m)</h5>
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-4 navbarNameText">
+					<h5 class="navbarText">Non Seamen</h5>
+				</div>
+			</nav>
+			<div class="tabToggle">
+				<ul class="tabs">
+					<li class="tabLink current tabLink_1" data-tab="tab1">PNR 1</li>
+					<li class="tabLink tabLink_2" data-tab="tab2">PNR 2</li>					
+				</ul> 
+				<div class="pnrBlock current" id="tab1">
+					<div class="informationTabs">
+						<div class="left">
+							<div class="overflowBlock" id="scrollBarStyle">
+								<div class="spaceBlock">
+									<div class="row pnr">
+										<div class="row innerSpaceBlock">
+											<div class="col-md-1 col-sm-1 col-xs-12 imageBlock">
+												<img class="flightIcon" src="images/default_flight_logo.svg" alt="flight image">
+												<p class="flightText">SQ 425</p>
+												<p class="flight">Singapore Airlines</p>
+												<p class="flightText">Boeing 777-200/</p>
+												<p class="flightText">200ER</p>
+											</div>									
+											<div class="col-md-8 col-sm-8 col-xs-8 tripDetails">	
+												<div class="travelTimeDetail">
+													<div class="col-md-6 col-sm-6 col-xs-6 traveltime">
+														<label class="departureTime">
+															<p class="time">23.15 SIN</p>
+															<p class="date">Sat, 20-Jan-2018</p>
+														</label>
+													</div>	
+													<div class="col-md-6 col-sm-6 col-xs-6 traveldeparturetime">
+														<label class="departureTime arrivalTime">
+															<p class="time">07.30 KIM</p>
+															<p class="date">Sun, 21-Jan-2018</p>
+														</label>									
+													</div>
+												</div>
+												<div class="travelTime"></div>
+												<div class="travelTimeDetail travelTimeDetail_2">
+													<div class="col-md-4 col-sm-4 col-xs-4 traveltime terminalDetail">
+														<label class="departureTime">
+															<p class="terminalname">changi Airport</p>
+															<p class="terminalname">Singapore,Terminal 2</p>
+														</label>
+													</div>	
+													<div class="col-md-4 col-sm-4 col-xs-4 duration terminalDetail">
+														<p class="stop">08h 00m</p>
+													</div>		
+													<div class="col-md-4 col-sm-4 col-xs-4 traveldeparturetime terminalDetail">
+														<label class="departureTime arrivalTime">
+															<p class="terminalname terminalname_2">Kimberley Airport,</p>
+															<p class="terminalname">South Africa,terminal 3</p>
+														</label>									
+													</div>
+												</div>
+											</div>
+											<div class="col-md-2 col-sm-2 col-xs-2 classDetails">
+												<h5>Class: <span class="fee">Economy</span></h5>
+											</div>
+										</div>	
+										<div class="row stopRoute">
+											<p class="stopDetails">*Flight AI 101 has technical stop at Delhi for 2h 20m. It arrives at DEL at 23:15 and departs from DEL at 01:35.</p>
+											<p class="operatedBy">*Flight AI 101 is Operated by Dragon Air</p>
+										</div>							
+									</div>
+									<div class="row pnr">
+										<div class="row innerSpaceBlock">
+											<div class="col-md-1 col-sm-1 col-xs-12 imageBlock">
+												<img class="flightIcon" src="images/default_flight_logo.svg" alt="flight image">
+												<p class="flightText">SQ 425</p>
+												<p class="flight">Singapore Airlines</p>
+												<p class="flightText">Boeing 777-200/</p>
+												<p class="flightText">200ER</p>
+											</div>									
+											<div class="col-md-8 col-sm-8 col-xs-8 tripDetails">	
+												<div class="travelTimeDetail">
+													<div class="col-md-6 col-sm-6 col-xs-6 traveltime">
+														<label class="departureTime">
+															<p class="time">23.15 SIN</p>
+															<p class="date">Sat, 20-Jan-2018</p>
+														</label>
+													</div>	
+													<div class="col-md-6 col-sm-6 col-xs-6 traveldeparturetime">
+														<label class="departureTime arrivalTime">
+															<p class="time">07.30 KIM</p>
+															<p class="date">Sun, 21-Jan-2018</p>
+														</label>									
+													</div>
+												</div>
+												<div class="travelTime"></div>
+												<div class="travelTimeDetail travelTimeDetail_2">
+													<div class="col-md-4 col-sm-4 col-xs-4 traveltime terminalDetail">
+														<label class="departureTime">
+															<p class="terminalname">changi Airport</p>
+															<p class="terminalname">Singapore,Terminal 2</p>
+														</label>
+													</div>	
+													<div class="col-md-4 col-sm-4 col-xs-4 duration terminalDetail">
+														<p class="stop">08h 00m</p>
+													</div>		
+													<div class="col-md-4 col-sm-4 col-xs-4 traveldeparturetime terminalDetail">
+														<label class="departureTime arrivalTime">
+															<p class="terminalname terminalname_2">Kimberley Airport,</p>
+															<p class="terminalname">South Africa,terminal 3</p>
+														</label>									
+													</div>
+												</div>
+											</div>
+											<div class="col-md-2 col-sm-2 classDetails">
+												<h5>Class: <span class="fee">Economy</span></h5>
+											</div>
+										</div>	
+										<span class="layover">Long Layover: 13h 40m</span>							
+										<hr>
+										<div class="row innerSpaceBlock">
+											<div class="col-md-1 col-sm-1 col-xs-12 imageBlock">
+												<img class="flightIcon" src="images/default_flight_logo.svg" alt="flight image">
+												<p class="flightText">SQ 425</p>
+												<p class="flight">Singapore Airlines</p>
+												<p class="flightText">Boeing 777-200/</p>
+												<p class="flightText">200ER</p>
+											</div>									
+											<div class="col-md-8 col-sm-8 col-xs-8 tripDetails">	
+												<div class="travelTimeDetail">
+													<div class="col-md-6 col-sm-6 col-xs-6 traveltime">
+														<label class="departureTime">
+															<p class="time">23.15 SIN</p>
+															<p class="date">Sat, 20-Jan-2018</p>
+														</label>
+													</div>	
+													<div class="col-md-6 col-sm-6 col-xs-6 traveldeparturetime">
+														<label class="departureTime arrivalTime">
+															<p class="time">07.30 KIM</p>
+															<p class="date">Sun, 21-Jan-2018</p>
+														</label>									
+													</div>
+												</div>
+												<div class="travelTime"></div>
+												<div class="travelTimeDetail travelTimeDetail_2">
+													<div class="col-md-4 col-sm-4 col-xs-4 traveltime terminalDetail">
+														<label class="departureTime">
+															<p class="terminalname">changi Airport</p>
+															<p class="terminalname">Singapore,Terminal 2</p>
+														</label>
+													</div>	
+													<div class="col-md-4 col-sm-4 col-xs-4 duration terminalDetail">
+														<p class="stop">08h 00m</p>
+													</div>		
+													<div class="col-md-4 col-sm-4 col-xs-4 traveldeparturetime terminalDetail">
+														<label class="departureTime arrivalTime">
+															<p class="terminalname terminalname_2">Kimberley Airport,</p>
+															<p class="terminalname">South Africa,terminal 3</p>
+														</label>									
+													</div>
+												</div>
+											</div>
+											<div class="col-md-2 col-sm-2 col-xs-2 classDetails">
+												<h5>Class: <span class="fee">Economy</span></h5>
+											</div>
+										</div>														
+									</div>								
+								</div>
+							</div>						
+						</div>					
+						<div class="right">
+							<div class="rightSpaceBlock">
+								<div class="row nameListBlock">
+									<div class="col-md-6 col-sm-12 col-xs-6 nameList">
+										<div class="nameSpace">
+											<input class="namesCheckBox" id="inputName" type="checkbox"/>
+											<label for="inputName" class="check_box"><span class="name">Peter Bensley
+											</span>
+											</label>
+										</div>									
+									</div>
+									<div class="col-md-6 col-sm-12 col-xs-6 nameList">
+										<div class="nameSpace">
+											<input class="namesCheckBox" id="inputName" type="checkbox"/>
+											<label for="inputName" class="check_box"><span class="name">Peter Bensley
+											</span>
+											</label>
+										</div>									
+									</div>
+								</div>
+								<div class="nameListFooter">
+									<div class="col-md-3 col-sm-5 col-xs-4 remark">
+										<p class="remarks">Remarks</p>
+									</div>
+									<div class="col-md-9 col-sm-7 col-xs-6 fastflight">
+										<p class="fastestFlight"><span class="colon"> : </span>Fastest Flight</p>
+									</div>
+								</div>
+							</div>						
+						</div>					
+					</div>
+					<div id="informationToggle">
+						<ul class="infoDetailTabs">
+							<li class="infoTab_1">
+								<a href="#block_1" rel="#fareTab" class="infoTab">Fare Summary & Rules</a>
+							</li>
+							<li class="infoTab_2">
+								<a href="#block_1" rel="#baggageTab" class="infoTab">Baggage</a>
+							</li>							
+						</ul>						
+					</div>
+					<div class="informationContents">
+						<div id="fareTab" class="infoTabContents infoTabContents_active">
+							<div class="flight_details_block" id="block_1">
+								<div class="row overflowBlock flight_info_overflow rules_block" id="scrollBarStyle">
+									<div class="col-md-4 col-sm-5">
+										<table class="table table-hover border_block">
+											<thead>
+												<tr>
+													<th class="col_space_1" scope="col" >Fare Summary</th>
+													<th class="col_space_2" scope="col"><span class="right_align right_align_2">ADT <span class="cross">&#10005</span>1</span></th>
+												</tr>
+												<tr>
+													<th class="col_space_1" scope="col">Base Fare</th>
+													<th class="col_space_2" scope="col"><span class="symbol">&#8377</span><span class="right_align right_align_2"> 1,228</span></th>
+												</tr>
+												<tr>
+													<th class="col_space_1" scope="col">Fee & Tax</th>
+													<th class="col_space_2" scope="col"><span  class="symbol">&#8377</span><span class="right_align right_align_2"> 5,726</span></th>
+												</tr>
+												<tr class="table-highlight">
+													<th class="col_space_1" scope="col">Total</th>
+													<th class="col_space_2" scope="col"><span  class="symbol">&#8377</span><span class="right_align right_align_2"> 13,420</span></th>
+												</tr>
+											</thead>
+										</table> 	
+										<p class="fare_note"><sup>*</sup>Total fare displayed above has been rounded off and may thus show a slight difference</p>								
+									</div>
+									<div class="col-md-5 col-md-offset-1 col-sm-7">
+										<div class="tabContainer">
+											<ul class="routeTab">
+												<li class="routeTabLink routeTabLink_1 current" data-tab="route_1">BOM-SIN,HKG-SIN,SIN-DEL</li>
+												<li class="routeTabLink routeTabLink_2 showsingle" data-tab="route_2">SIN-KUL </li>
+												<li class="routeTabLink showsingle" data-tab="route_3">KUL-HKG </li>
+											</ul>
+											<div class="routeTabContent current" id="route_1">						
+												<div class="timelimit">
+													<h5>Time Limit: <span class="fee fees">Awaiting</span></h5>
+												</div>
+												<table  class="table table-bordered">
+													<thead>
+														<tr>
+															<th class="blank" scope="col"></th>
+															<th class="cancellation_fee" scope="col">Cancellation Fee</th>
+															<th class="change_fee" scope="col">Change  Fee</th>
+														</tr>
+													</thead>								
+													<tbody>
+														<tr>
+															<th class="blank">Before Departure</th>
+															<th class="cancellation_fee">&#8377 3,500</th>
+															<th class="change_fee">&#8377 2,500</th>
+														</tr>
+														<tr>
+															<th class="blank">No Show</th>
+															<th class="cancellation_fee">Non Refundable</th>
+															<th class="change_fee">No Changes allowed</th>
+														</tr>
+														<tr>
+															<th class="blank">After Departure</th>
+															<th class="cancellation_fee">One way Fare+ penalty would apply</th>
+															<th class="change_fee">One way Fare+ penalty would apply</th>
+														</tr>
+													</tbody>										
+												</table>
+												<table class="table table-bordered">
+													<tr>
+														<th class="col" colspan="2"><h6>Service Fee</h6><span>(Changed per passenger in addition to airline fee as applicable)</span></th>
+													</tr>
+													<tr>
+														<th scope="col">Offline Cancellation Service fee</th>
+														<th scope="col"><span class="right_align">&#8377 2,250</span></th>
+													</tr>
+													<tr>
+														<th scope="col">Online Cancellation Service fee</th>
+														<th scope="col"><span class="right_align">&#8377 1,250</span></th>
+													</tr>
+													<tr>
+														<th scope="col">Rescheduling Service fee</th>
+														<th scope="col"><span class="right_align">&#8377 1,250</span></th>
+													</tr>
+													<tr>
+														<th class="fare_note" scope="col" colspan="2">We would recommend that you reschedule/cancel your tickets atleast 72 hours prior to the flight departure</th>
+													</tr>
+												</table>	
+											</div>
+											<div class="routeTabContent" id="route_2">
+												<div class="timelimit">
+													<h5>Time Limit: <span class="fee fees">Awaitings</span></h5>
+												</div>
+												<table  class="table table-bordered">
+													<thead>
+														<tr>
+															<th class="blank" scope="col"></th>
+															<th class="cancellation_fee" scope="col">Cancellation Fee</th>
+															<th class="change_fee" scope="col">Change  Fee</th>
+														</tr>
+													</thead>								
+													<tbody>
+														<tr>
+															<th class="blank">Before Departure</th>
+															<th class="cancellation_fee">&#8377 3,500</th>
+															<th class="change_fee">&#8377 2,500</th>
+														</tr>
+														<tr>
+															<th class="blank">No Show</th>
+															<th class="cancellation_fee">Non Refundable</th>
+															<th class="change_fee">No Changes allowed</th>
+														</tr>
+														<tr>
+															<th class="blank">After Departure</th>
+															<th class="cancellation_fee">One way Fare+ penalty would apply</th>
+															<th class="change_fee">One way Fare+ penalty would apply</th>
+														</tr>
+													</tbody>										
+												</table>
+												<table class="table table-bordered">
+													<tr>
+														<th class="col" colspan="2"><h6>Service Fee</h6><span>(Changed per passenger in addition to airline fee as applicable)</span></th>
+													</tr>
+													<tr>
+														<th scope="col">Offline Cancellation Service fee</th>
+														<th scope="col"><span class="right_align">&#8377 2,250</span></th>
+													</tr>
+													<tr>
+														<th scope="col">Online Cancellation Service fee</th>
+														<th scope="col"><span class="right_align">&#8377 1,250</span></th>
+													</tr>
+													<tr>
+														<th scope="col">Rescheduling Service fee</th>
+														<th scope="col"><span class="right_align">&#8377 1,250</span></th>
+													</tr>
+													<tr>
+														<th class="fare_note" scope="col" colspan="2">We would recommend that you reschedule/cancel your tickets atleast 72 hours prior to the flight departure</th>
+													</tr>
+												</table>	
+											</div>
+											<div class="routeTabContent" id="route_3">
+												<div class="timelimit">
+													<h5>Time Limit: <span class="fee fees">Awaitingss</span></h5>
+												</div>
+												<table  class="table table-bordered">
+													<thead>
+														<tr>
+															<th class="blank" scope="col"></th>
+															<th class="cancellation_fee" scope="col">Cancellation Fee</th>
+															<th class="change_fee" scope="col">Change  Fee</th>
+														</tr>
+													</thead>								
+													<tbody>
+														<tr>
+															<th class="blank">Before Departure</th>
+															<th class="cancellation_fee">&#8377 3,500</th>
+															<th class="change_fee">&#8377 2,500</th>
+														</tr>
+														<tr>
+															<th class="blank">No Show</th>
+															<th class="cancellation_fee">Non Refundable</th>
+															<th class="change_fee">No Changes allowed</th>
+														</tr>
+														<tr>
+															<th class="blank">After Departure</th>
+															<th class="cancellation_fee">One way Fare+ penalty would apply</th>
+															<th class="change_fee">One way Fare+ penalty would apply</th>
+														</tr>
+													</tbody>										
+												</table>
+												<table class="table table-bordered">
+													<tr>
+														<th class="col" colspan="2"><h6>Service Fee</h6><span>(Changed per passenger in addition to airline fee as applicable)</span></th>
+													</tr>
+													<tr>
+														<th scope="col">Offline Cancellation Service fee</th>
+														<th scope="col"><span class="right_align">&#8377 2,250</span></th>
+													</tr>
+													<tr>
+														<th scope="col">Online Cancellation Service fee</th>
+														<th scope="col"><span class="right_align">&#8377 1,250</span></th>
+													</tr>
+													<tr>
+														<th scope="col">Rescheduling Service fee</th>
+														<th scope="col"><span class="right_align">&#8377 1,250</span></th>
+													</tr>
+													<tr>
+														<th class="fare_note" scope="col" colspan="2">We would recommend that you reschedule/cancel your tickets atleast 72 hours prior to the flight departure</th>
+													</tr>
+												</table>	
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="baggageTab" class="infoTabContents">
+							<div class="flight_details_block">
+								<div class="row overflow_block flight_info_overflow rules_block" id="scrollbar_style">
+									<div class="col-md-7 baggage_table">
+										<figure><img class="flightIcon" src="images/default_flight_logo.svg" alt="flight image"><figcaption class="figure_caption">BLR-AUH</figcaption>
+										</figure>
+										<table class="table table-bordered baggage_table_bottom">
+											<tbody>
+												<tr>
+													<td>Baggage Type</td>
+													<td>Check-In Baggage</td>
+													<td>Hand Baggage</td>
+												</tr>
+												<tr>
+													<td>Adult</td>
+													<td>30 Kgs</td>
+													<td>7 Kgs</td>
+												</tr>
+											</tbody>
+										</table>
+										<p>The baggage information is just for reference.Please check with airline before check-in.For more information,visit Ethad Airways website.</p>
+										<figure><img class="flightIcon" src="images/default_flight_logo.svg" alt="flight image"><figcaption class="figure_caption">BLR-AUH</figcaption>
+										</figure>
+										<table class="table table-bordered baggage_table_bottom">
+											<tbody>
+												<tr>
+													<td>Baggage Type</td>
+													<td>Check-In Baggage</td>
+													<td>Hand Baggage</td>
+												</tr>
+												<tr>
+													<td>Adult</td>
+													<td>30 Kgs</td>
+													<td>7 Kgs</td>
+												</tr>
+											</tbody>
+										</table>
+										<p>The baggage information is just for reference.Please check with airline before check-in.For more information,visit Ethad Airways website.</p>
+										<figure><img class="flightIcon" src="images/default_flight_logo.svg" alt="flight image"><figcaption class="figure_caption">BLR-AUH</figcaption>
+										</figure>
+										<table class="table table-bordered baggage_table_bottom">
+											<tbody>
+												<tr>
+													<td>Baggage Type</td>
+													<td>Check-In Baggage</td>
+													<td>Hand Baggage</td>
+												</tr>
+												<tr>
+													<td>Adult</td>
+													<td>30 Kgs</td>
+													<td>7 Kgs</td>
+												</tr>
+											</tbody>
+										</table>
+										<p>The baggage information is just for reference.Please check with airline before check-in.For more information,visit Ethad Airways website.</p>
+										<figure><img class="flightIcon" src="images/default_flight_logo.svg" alt="flight image"><figcaption class="figure_caption">BLR-AUH</figcaption>
+										</figure>
+										<table class="table table-bordered baggage_table_bottom">
+											<tbody>
+												<tr>
+													<td>Baggage Type</td>
+													<td>Check-In Baggage</td>
+													<td>Hand Baggage</td>
+												</tr>
+												<tr>
+													<td>Adult</td>
+													<td>30 Kgs</td>
+													<td>7 Kgs</td>
+												</tr>
+											</tbody>
+										</table>
+										<p>The baggage information is just for reference.Please check with airline before check-in.For more information,visit Ethad Airways website.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="pnrBlock" id="tab2">
+						hii
+					</div>	
+				</div>			
+			</div>			
+		</div>		
+	</div>
+	<div class="footer_button">
+		<button type="button" class="btn btn-danger hold">HOLD</button>
+		<button type="button" class="btn btn-danger issue">ISSUE</button>
+		<button type="button" class="btn btn-danger email_option">E-MAIL OPTIONS</button>		
+	</div>
+	<nav class="navbar navbar-dark bg-dark">
+		<div class="col-md-6 col-sm-6 col-xs-7 copyrights">Copyrights Reserved Just One Click</div>
+		<div class="col-md-1 col-sm-2 col-xs-3 contactus">Contact Us</div>
+		<div class="col-md-1 col-sm-2 col-xs-2 support">Support</div>
+ 	</nav>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/airlinepageupdated.js"></script>
+</body>
+</html>

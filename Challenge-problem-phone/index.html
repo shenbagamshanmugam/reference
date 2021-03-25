@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta charset="utf-8">
+    	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+    	<title>Index</title>
+    </head>
+	<body onload="displayProducts()">
+	<!-- <div class="container-fluid"> -->       
+        <div class="row">
+            <nav class="navbar navbar-default">              
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
+                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Shopon</a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                       <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <i class="glyphicon glyphicon-shopping-cart cartimg" data-toggle="modal" data-target="#myModal">
+                                </i>
+                                <span id="cart">0</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+                <!-- Code for display the products -->
+        <!-- <div class="row phone">PHONE</div>
+ -->        <div class="row" id="products"></div>
+                <!-- Code for display the Accessories -->
+        <!-- <div class="row Accesories">Accesories</div>
+        <div class="row" id="phn_accesories"></div>
+ -->                <!-- code for displaying the Cart List -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog cart_popup">      
+                <div class="modal-content">
+                    <div class="modal-header header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Cart Details</h4>
+                    </div>
+                    <div class="row" id="cartlist"></div>
+                    <div class="modal-footer">
+                        <label class="total">Total : &#8377 <span id="total"></span></label><br>
+                        <label class="discount">Discount Amount : &#8377 <span id="tot_amt"></span></label><br>
+                        <label class="Tax_Amount">Tax Amount : &#8377 <span id="tax_amt"></span></label><br>
+                       <label class="pay_amount">Total Amount : &#8377 <span id="pay_amt"></span></label><br>
+                        <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+                    </div>
+                </div>
+            </div>          
+        </div>
+            <script src="js/jquery-1.9.1.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+    		<script type="text/javascript" src="./js/challenge.js"></script>
+    </body>
+</html>

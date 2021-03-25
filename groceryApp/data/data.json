@@ -1,0 +1,6 @@
+[
+	{"id": 1, "completed": true, "itemName": "Chocolate", "date": "2018/06/01"},
+	{"id": 2, "completed": true, "itemName": "Milk", "date": "2018/06/02"},
+	{"id": 3, "completed": true, "itemName": "Cookie", "date": "2018/06/03"},
+	{"id": 4, "completed": true, "itemName": "Egg", "date": "2018/06/04"}
+]

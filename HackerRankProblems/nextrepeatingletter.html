@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Next Repeating Letter</title>
+    <style>
+        #display{
+            margin-left:10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="repeatingletter">
+        <div>
+            <label>
+                Enter the word:
+                <input type="text" id="repeat" onChange="findRepeat()">
+            </label>
+            <p>Repeating character is :<span id="display"></span> </p>
+        </div>
+    </div>
+    <script>
+        function findRepeat(){        
+            
+            var letter = document.getElementById('repeat').value;           
+            str = letter.split('');
+            console.log("letter"+str)
+                           
+            for(i=0;i<str.length;i++){
+              check = str.slice(0,i+2);
+              for(j=0;j<check.length-1;j++){
+                  if(check[j]==check[check.length-1]){
+                      console.log("Repeating Letter is "+ check[j]);
+                      document.getElementById('display').innerHTML=check[j];
+                      check = [];
+                      str = [];
+                  }
+              }
+               
+               
+                
+            }
+        }
+    </script>
+</body>
+</html>

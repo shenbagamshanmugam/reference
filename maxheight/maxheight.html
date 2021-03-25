@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Max Height</title>	
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+</head>
+<script type="text/javascript">
+	$(document).ready(function(){
+	var max=-1;
+  	 $(".name").each(function() {
+  	  var h = $(this).height(); 
+ 	   max = h > max ? h : max;
+	});
+	alert(max);
+	var big=max;
+	alert(big);
+	 $(".name").height(big);
+
+	alert($('.names').height());
+	alert($('.name1').height());
+});
+</script>
+<body>
+	<div class="name names" style="height:100px;width:300px;padding:10px;margin:3px;border:1px solid blue;background-color:lightblue;"></div><br>
+	<div class="name" style="height:140px;width:300px;padding:10px;margin:3px;border:1px solid blue;background-color:lightblue;"></div><br>
+	<div class="name name1"  style="height:90px;width:300px;padding:10px;margin:3px;border:1px solid blue;background-color:lightblue;"></div><br>
+</body>
+</html>

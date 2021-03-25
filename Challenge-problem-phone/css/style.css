@@ -1,0 +1,36 @@
+.cart-product-amount{
+	padding: 30px;
+	text-align: center;
+}
+.row{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+#cartlist{
+	width: 100%;
+	float: left;
+}
+.cart_popup{
+	width: 100%;
+}
+.modal-title{
+	font-size: 30px;
+	font-style: italic;
+	color: #e80d39;
+}
+.fade{
+	background: #efeec6;
+}
+.captiontext,.price{
+	font-size: 17px;
+	font-weight: 700;
+}
+.addtocart{
+	padding-bottom: 20px;
+}
+.cartimg{
+	font-size: 40px;
+}
+#cart,.total,.discount,.pay_amount,.Tax_Amount{
+	font-size: 20px;
+}

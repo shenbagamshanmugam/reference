@@ -1,0 +1,70 @@
+ 
+<!doctype html>
+<html>
+
+<head>
+	<title>Bar Chart</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+	<!-- <script src="util.js"></script> -->
+	<style>
+	canvas {
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+	</style>
+</head>
+
+<body>
+	<div id="container" style="width: 75%;">
+		<canvas id="ctx"></canvas>
+	</div>
+	
+    <script>
+        // var myBarChart = new Chart(ctx, {
+        // type: 'bar',       
+        // data:{
+        //     labels:['set1','set2','set3'],
+        //     datasets:[{
+        //         label:'my first data',
+        //         data:[0,20,30,40,50],
+        //         fill:false,
+        //         backgroundColor:["rgba(255,99,132,0.2)","rgba(255,159,64,0.2)","rgba(255,205,86,0.2)"]
+        //     }]
+        // },
+        
+        var myBarChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels:['april','may','june'],
+            datasets:[{
+                label:'first data',
+                data:[0,20,40,60,80],
+                backgroundColor:['rgb(255, 159, 64)','rgb(75, 192, 192)','rgb(54, 162, 235)'],
+                barPercentage: 0.5,
+                barThickness: 6,
+                barThickness:50,
+                maxBarThickness: 50,
+                minBarLength: 2,
+            }]
+        }
+        
+    });
+    
+//     chartColors = {
+// 	red: 'rgb(255, 99, 132)',
+// 	orange: 'rgb(255, 159, 64)',
+// 	yellow: 'rgb(255, 205, 86)',
+// 	green: 'rgb(75, 192, 192)',
+// 	blue: 'rgb(54, 162, 235)',
+// 	purple: 'rgb(153, 102, 255)',
+// 	grey: 'rgb(201, 203, 207)'
+// }
+  
+
+
+    </script>
+</body>
+
+</html>
+

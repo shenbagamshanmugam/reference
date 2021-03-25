@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+body{
+	margin: 0 auto;	
+	width: 1280px;
+	padding: 20px;
+	font-family: 'Source Sans Pro', sans-serif ;
+	font-size: 14px;	
+}
+nav{
+	float: right;
+}
+nav li:not(:first-child):before{
+	content: "|";
+	padding: 10px 10px 0px 0px;
+}
+ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 20px 20px 0px 20px;
+	color: #737373;
+	font-size: 15px;
+}
+hr{
+	color: #f4f4f4;
+}
+.afterheader{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 1280px;
+	min-height: 650px;
+	height: auto;
+}
+.leftside{
+	float: left;
+	width: 243px;
+}
+.rigthside{
+	float: right;
+	width:1036px;
+	background-color:#eeeeee;
+	min-height: 640px;
+	border: 1px;
+}
+.introduction,.latestnews{
+	min-height: 250px;
+	height: auto;
+	background:#eeeeee;
+	margin-right: 20px;	
+}
+.header{
+	padding: 10px 10px 10px 10px;
+	height: 20px;
+	background: #dddddd;
+	color:#757575;
+}
+h3{
+	margin: 0;	
+	font-size: 20px;
+	font-weight: lighter;	
+}
+p{
+	padding:10px;
+	text-align:justify;
+	margin: 0;
+	color:#757575;
+}
+.latestnews{
+	margin-top: 20px;
+	min-height: 300px;	
+}
+ol,p{
+	margin: 0;
+	padding: 10px;
+	color: #7a7a7a;
+	list-style-position: inside;
+}
+ol h4{
+	padding: 10px 0px;	
+	font-style: italic;
+	font-weight: 100;
+}
+button{
+	margin:0px 0px 10px 130px;
+	background: #909090;
+	border: 0px;
+	padding: 2px 4px;
+}
+.btn{
+	margin-left: 280px;
+}
+.belowwelcome{
+	margin: 10px;	
+}
+.image img{	
+	width: 1016px;
+}
+.bottom{
+	margin-top: 50px;
+	display: inline-block;
+	width: 1016px;
+}
+.mission{
+	float: left;
+	display: inline-block;
+	width: 485px;
+}
+.details{
+	float: right;
+	display: inline-block;
+	width: 510px;
+	margin-left: 10px;
+}
+.bottom p{
+	padding: 10px 0px;
+}
+form p label {
+	display:inline-block;
+	float:left;
+	width:100px;
+}
+input[type=text]{
+	float: right;
+	margin-right: 250px;
+}
+input[type=radio]{
+	margin: 0px 5px 0px 25px;
+}
+.submit{
+	float: right;
+	margin-right: 180px;
+}
+.name,.location{
+	float: left;
+	margin-top: 20px;
+	color: #757575;
+}
+.location{
+	float: right;
+	margin-right:200px;
+}
+footer{
+	padding-top: 30px;
+}
+footer p{
+ 	text-align: center;
+}

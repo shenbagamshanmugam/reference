@@ -1,0 +1,20 @@
+.grocerynavbar{
+	border-radius: 0;
+}
+.brandImage{
+	color: #45d112;
+	font-size: 25px;
+}
+.listItem{
+	font-weight: 700;
+}
+.brandName{
+	position: relative;
+	bottom: 3px;	
+}
+.strike{
+	background: gray;
+}
+.strike:after{
+	background: white;
+}

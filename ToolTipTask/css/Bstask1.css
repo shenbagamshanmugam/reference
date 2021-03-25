@@ -1,0 +1,312 @@
+/*common styles start*/
+body{
+	font-family: times new roman;
+}
+li,h4,h3,.read,.btn{
+	list-style: none;
+	color: #5cbcb5;
+}
+/*common styles end*/
+/*left menu start*/
+.listitems ul{
+	margin:10px 0px 50px 0px;
+	padding: 0px
+}
+.list li{
+	padding: 10px 0px;	
+	font-size: 16px;
+}
+.listitems i{
+	margin-right: 10px;
+	color: #000000;
+}
+/*left menu end*/
+/*Right side container style start*/
+.nav{
+	background: #eff8f7;
+	padding: 10px 0px 10px 10px;
+}
+h4,p,a{
+	margin: 0;
+	padding: 0;
+}
+h4{
+	font-size: 25px;
+}
+.font{
+	font-size: 16px;
+	color:  #5cbcb5;
+}
+.nav > li > a{
+	padding: 0;
+}
+/*Right side container style end*/
+.signup{
+	margin: 40px 0px;
+	border-top: 2px dashed #e6e6e6;
+	border-bottom: 2px dashed #e6e6e6;
+}
+.paragraph,.emailtext{	
+	padding: 15px 0px 0px 0px;
+}
+.emailtext{
+	margin-top: 8px;
+}
+input[type="text"]{
+	margin-right: 10px;
+	width: 300px;
+	border-top:2px solid #a7a7a7;
+	border-left: 2px solid #c4c4c4;
+}
+.btn-default.active{
+	width: 100px;
+	text-align: center;
+	height: 27px;
+	font-size: 15px;
+	font-weight: 600;
+}
+.thumbnail{
+	border:none;
+}
+.thumbnail>img{
+	border:2px solid #E8E8E7;
+	padding: 10px;
+}
+.caption h3{
+	font-size: 20px;
+}
+.lead{
+	font-size: 19px;
+	color: #607784;
+	text-shadow: 0.1px 0px #607784;
+}
+.font{
+	color: #5cbcb5;
+}
+.caption footer,.policy ul,.footericon >.fa{
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+footer p,.footerlist>li{
+	display: inline-block;
+	font-size: 16px;
+	font-size: 16px;
+}
+.policy p{
+	color: #a9a9a9;
+}
+.read{
+	border-bottom: 1px dashed #607784;
+}
+.date{
+	color: #abacae;
+}
+.nav-pills > li+li{
+	margin-left: 0px;
+}
+.footerline{
+	border-bottom: 1px solid #abacae;
+	padding-bottom: 10px;
+}
+.footerlist ul{
+	padding-left: 0px;
+}
+.footerlist li:not(:last-child){
+	border-right: 1px solid #abacae;
+	padding: 0px 5px 0px 0px;
+}
+.latesttweet h3,.friends h3{
+	border-bottom: 1px dashed #e6e6e6;
+	padding-bottom: 5px;
+	font-size: 18px;
+	color: #000000;
+	text-shadow: 0.1px 0.5px #607784;
+}
+.latesttweet{
+	margin-bottom: 40px;
+}
+.friends p{
+	margin: 15px 0px;
+}
+.btn{
+	text-align: left;
+}
+.footericon >.fa{
+	float: right;
+	padding-right: 10px;
+	color: #a9a9a9;
+}
+.float,.float1{
+	position: absolute;
+	font-weight: 600;
+}
+.float{
+	padding: 15px;
+	background: white;
+	min-width: 30%;	
+	font-size: 20px; 
+	top:300px;
+}
+.float1{	
+	padding:12px;
+	background: black;
+	color: white;
+	min-width: 60%;
+	font-size: 16px;
+	top:350px;
+}
+.float>a,.float1>a{
+	text-decoration: none;
+	color: inherit;
+	}
+.photoby{
+	position: absolute;
+	top: 460px;
+	right: 30px;
+	color: black;
+}
+/*Style for tablet*/
+@media only screen and (min-device-width : 424px) and (max-device-width : 1024px){
+	.container-fluid,.list li{
+		margin-top: 30px;
+	}
+	.logo{
+		float: left;
+		width: 50%;
+	}
+	.list{
+		float: right;
+	}
+	.list li{
+		float: left;
+		text-align: center;
+	}
+	.list i{	
+		width: 100%;
+		text-align: center;
+	}
+	.blockimage{
+		margin-top: 20px;
+		width: 100%;
+		height: 500px;
+	}
+	.float,.float1{
+		position: absolute;
+		font-weight: 600;
+		text-decoration: none;
+	}
+	.float{
+		top:320px;
+	}
+	.float1{	
+		top:370px;
+	}
+	.photoby{
+	top: 480px;
+	right: 30px;
+	}
+	.signup p{
+		margin-left: 12%;
+	}
+	.latesttweet,.friends{
+		display: none;
+	}
+	input[type="text"]{	
+	width: 260px;
+	margin-left: 10px;
+	}
+}
+/*Style for mobile*/
+@media only screen and (max-width : 423px){
+	.grid{
+		padding: 0;
+	}
+	.logo{
+		width: 40%;
+		margin: 0 auto;
+	}
+	.list ul{
+		margin: 0 auto;
+		padding: 0;
+	}
+	.list li{
+		float: left;
+		font-size: 8px;
+		padding-left: 10px;
+	}
+	.col-md-2{
+		display: flex;
+		flex-direction: column;
+	}
+	.image{
+		order:2;
+	}
+	.listitems{
+		order: 1;
+		padding: 0;
+	}
+	.list i:before{
+		display: none;
+	}
+	.blockimage{
+		margin-top: 20px;
+		height: 200px;
+		width: 100%;
+	}
+	.nav,.latesttweet,.friends{
+		display: none;
+	}
+	.signup p{
+		margin-left: 25%;
+	}
+	.policy ul li,.policy p{
+		font-size:10px;
+		display: inline-block;
+	}
+	.footericon{
+		font-size: 8px;
+		padding: 0;
+	}
+	.float,.float1{
+		position: absolute;
+		font-weight: 600;
+	}
+	.float{
+		padding: 10px;
+		width: 100%;	
+		font-size: 10px;  
+		top:175px;
+	}
+	.float1{	
+		padding:5px;
+		width: 92%;
+		font-size: 8px;
+		top:205px;
+	}
+	.photoby{	
+		top: 226px;
+		right: 10px;
+		width: 125px;
+		font-size: 10px;	
+	}
+}
+/*Style for laptop & desktop*/
+@media only screen  and (min-width : 1025px){
+	.container-fluid{
+		margin: 30px 5px 0px 0px;
+	}
+	.thumbnail{
+		float: left;
+	}
+	.logo{
+		width: 70%;
+		margin-bottom: 20px;
+	}
+	.signup p{
+		margin-left: 12%;
+	}
+	.blockimage{
+	width: 100%;
+	height: 500px;
+    }
+} 

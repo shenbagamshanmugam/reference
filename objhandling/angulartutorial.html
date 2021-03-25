@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Angular tutorial</title>
+	<script src="js/angular.min.js"></script>
+	<script>
+		function Customer($scope,$rootScope){
+			debugger;
+			$rootScope.Counter = (($rootScope.Counter || 0)+1);
+			$scope.CustomerName = "shenba";
+			$scope.CustomerId = "CC133";
+		}
+		var myApp = angular.module("myApp",[]);
+		myApp.controller("CustomerObj",Customer);
+	</script>
+</head>
+<body>
+	<div ng-app="myApp">
+		{{Counter}}
+		<div id="CustomerScreen" ng-controller="CustomerObj">
+			Customer Name: <input ng-model="CustomerName" type="text" name="customername" id="CustomerName">
+			Customer Id: <input ng-model="CustomerId" type="text" name="customerid" id="CustomerId">
+			<div id="custname">{{CustomerName}}</div>
+			<div id="custid">{{CustomerId}}</div>
+		</div>
+		<div id="CustomerScreen2" ng-controller="CustomerObj">
+			Customer Name:<input ng-model="CustomerName" type="text" name="customername" id="CustomerName">
+			Customer Id:<input ng-model="CustomerId" type="text" name="customerid" id="CustomerId">
+			<div id="custname">{{CustomerName}}</div>
+			<div id="custid">{{CustomerId}}</div>
+		</div>
+	</div>
+</body>
+</html>

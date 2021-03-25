@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Max Height</title>	
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<style type="text/css">
+		.borderBottom{
+			border-bottom: 1px solid #bdbdbd;
+			}
+			.textAlign{
+				text-align: center;
+			}
+			.removePadding{
+				padding: 0px !important;
+			}
+			.borderRight{
+			border-right: 1px solid #bdbdbd;
+			}
+			.bgColor_2{
+	background: #e8e8e8;
+}
+.GDSleftText{
+	font-family: SoinSansProRoman;
+}
+.penalityText{
+	color: #000;
+	position: relative;
+	top: 5px;
+	font-size: 12px;
+}
+	</style>
+
+
+</head>
+<script type="text/javascript">
+	$(document).ready(function(){
+	var max=-1;
+  	 $(".commonHeight").each(function() {
+  	  var h = $(this).height(); 
+ 	   max = h > max ? h : max;
+	});
+	alert(max);
+	var big=max;	
+	 $(".commonHeight").height(big);	
+});
+
+</script>
+<body>
+	<div class="col-md-12 removePadding textAlign borderBottom">
+		<div class="col-md-4 removePadding borderRight bgColor_2 commonHeight">
+			<span class="GDSleftText penalityText">After Deaparture</span>			
+		</div>
+		<div class="col-md-4 removePadding borderRight commonHeight">
+			<span class="GDSleftText penalityText">After Deaparture</span>
+		</div>
+		<div class="col-md-4 removePadding commonHeight">
+			<span class="GDSleftText penalityText"> One way fare+Penality would apply One way fare+Penality would apply One way fare+Penality would apply One way fare+Penality would apply One way fare+Penality would apply One way fare+Penality would apply</span>
+		</div>
+	</div>	
+</body>
+</html>
